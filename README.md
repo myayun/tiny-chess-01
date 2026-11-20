@@ -11,7 +11,8 @@ environment.
   flagged by the `0x88` bit), pieces as signed integers.
 - **Search:** negamax with alpha-beta pruning, principal-variation search,
   quiescence search (captures, promotions, and all evasions when in check),
-  null-move pruning and a transposition table. Iterative deepening over a
+  null-move pruning, killer-move ordering, a transposition table, and
+  search-path repetition detection. Iterative deepening over a
   **fixed node budget** (100,000 nodes/move), so play is fully
   deterministic — no wall clock is used in the search.
 - **Evaluation:** tapered PeSTO piece-square tables (the published
